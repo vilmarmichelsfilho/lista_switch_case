@@ -10,10 +10,120 @@
 
     //ENTRADA
 
+    const numero1 = Number(prompt(`Insira um número:`));
+    const numero2 = Number(prompt(`Insira outro número:`));
+    const operacao = prompt(`Insira a operação:`);
 
     //PROCESSAMENTO
 
+    let resposta, parOuImpar, numero, positivoOuNegativo, inteiroOuDecimal;
+    switch (operacao) {
+        case "/":
+            numero = numero1 / numero2;
+            switch (numero % 2 == 0) {
+                case true:
+                    parOuImpar = `par`;
+                    break;
+                default:
+                    parOuImpar = `impar`;
+            }
+            switch (numero > 0) {
+                case true:
+                    positivoOuNegativo = `positivo`;
+                    break;
+                default:
+                    positivoOuNegativo = `negativo`;
+            }
+            switch (numero % 1 !== 0) {
+                case true:
+                    inteiroOuDecimal = `decimal`;
+                    break;
+                default:
+                    inteiroOuDecimal = `inteiro`;
+            }
+            resposta = `O resultado da divisão é de ${numero}, sendo esse um número ${parOuImpar}, ${positivoOuNegativo} e ${inteiroOuDecimal}`;
+            break;
+        case "*":
+            numero = numero1 * numero2;
+             switch (numero % 2 == 0) {
+                case true:
+                    parOuImpar = `par`;
+                    break;
+                default:
+                    parOuImpar = `impar`;
+            }
+            switch (numero > 0) {
+                case true:
+                    positivoOuNegativo = `positivo`;
+                    break;
+                default:
+                    positivoOuNegativo = `negativo`;
+            }
+            switch (numero % 1 !== 0) {
+                case true:
+                    inteiroOuDecimal = `decimal`;
+                    break;
+                default:
+                    inteiroOuDecimal = `inteiro`;
+            }
+            resposta = `O resultado da multiplicação é de ${numero}, sendo esse um número ${parOuImpar}, ${positivoOuNegativo} e ${inteiroOuDecimal}`;
+            break;
+        case "+":
+            numero = numero1 + numero2;
+             switch (numero % 2 == 0) {
+                case true:
+                    parOuImpar = `par`;
+                    break;
+                default:
+                    parOuImpar = `impar`;
+            }
+            switch (numero > 0) {
+                case true:
+                    positivoOuNegativo = `positivo`;
+                    break;
+                default:
+                    positivoOuNegativo = `negativo`;
+            }
+            switch (numero % 1 !== 0) {
+                case true:
+                    inteiroOuDecimal = `decimal`;
+                    break;
+                default:
+                    inteiroOuDecimal = `inteiro`;
+            }
+            resposta = `O resultado da soma é de ${numero}, sendo esse um número ${parOuImpar}, ${positivoOuNegativo} e ${inteiroOuDecimal}`;
+            break;
+        case "-":
+            numero = numero1 - numero2;
+             switch (numero % 2 == 0) {
+                case true:
+                    parOuImpar = `par`;
+                    break;
+                default:
+                    parOuImpar = `impar`;
+            }
+            switch (numero > 0) {
+                case true:
+                    positivoOuNegativo = `positivo`;
+                    break;
+                default:
+                    positivoOuNegativo = `negativo`;
+            }
+            switch (numero % 1 !== 0) {
+                case true:
+                    inteiroOuDecimal = `decimal`;
+                    break;
+                default:
+                    inteiroOuDecimal = `inteiro`;
+            }
+            resposta = `O resultado da subtração é de ${numero}, sendo esse um número ${parOuImpar}, ${positivoOuNegativo} e ${inteiroOuDecimal}`;
+            break;
+        default:
+            resposta = `Operador inválido`;
+    }
     
     //SAÍDA
+
+    alert(resposta);
 
 </script>

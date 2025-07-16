@@ -7,10 +7,21 @@
 
     //ENTRADA
 
+    const numero = Number(prompt(`Informe um número inteiro:`));
     
     //PROCESSAMENTO
 
+    let resposta
+    switch (numero % 2 == 0) {
+        case true:
+            resposta = "Par";
+            break;
+        default:
+            resposta = "Impar";
+    }
     
     //SAÍDA
+
+    alert(resposta);
 
 </script>

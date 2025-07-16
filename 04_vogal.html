@@ -7,10 +7,33 @@
 
     // ENTRADA
 
+    const letra = prompt(`Informe uma letra:`);
     
     // PROCESSAMENTO
 
+    let resposta;
+    switch (letra.toUpperCase()) {
+        case "A":
+            resposta = "Vogal";
+            break;
+        case "E":
+            resposta = "Vogal";
+            break;
+        case "I":
+            resposta = "Vogal;"
+            break;
+        case "O":
+            resposta = "Vogal";
+            break;
+        case "U":
+            resposta = "Vogal";
+            break;
+        default:
+            resposta = "Este caractere não é uma vogal";
+    }
     
     // SAÍDA
+
+    alert(resposta);
 
 </script>

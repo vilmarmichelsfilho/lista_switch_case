@@ -13,11 +13,28 @@
     */
 
     //ENTRADA
-    
+
+    const turno = prompt(`Insira o turno que você estuda:`);
     
     //PROCESSAMENTO
 
+    let resposta;
+    switch (turno.toUpperCase()) {
+        case "M":
+            resposta = "Bom dia!";
+            break;
+        case "V":
+            resposta = "Boa Tarde!";
+            break;
+        case "N":
+            resposta = "Boa Noite!";
+            break;
+        default:
+            resposta = "Valor Inválido";
+    }
     
     //SAÍDA
+
+    alert(resposta)
 
 </script>
