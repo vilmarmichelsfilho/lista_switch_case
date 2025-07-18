@@ -21,8 +21,49 @@
     
     //PROCESSAMENTO
 
-    
+    let resposta;
+    let suspeito = 0;
+
+    switch (telefone.toUpperCase()) {
+        case "S": 
+            suspeito = suspeito + 1;
+    }
+    switch (esteve.toUpperCase()) {
+        case "S":
+            suspeito = suspeito + 1;
+    } 
+    switch (moraPerto.toUpperCase()) {
+        case "S":
+            suspeito = suspeito + 1;
+    }
+    switch (devia.toUpperCase()) {
+        case "S":
+            suspeito = suspeito + 1;
+    }
+    switch (trabalhou.toUpperCase()) {
+        case "S":
+            suspeito = suspeito + 1;
+    }
+
+    switch (suspeito) {
+        case 2:
+            resposta = `Você é um suspeito`;
+            break;
+        case 3:
+            resposta = `Você é cúmplice`;
+            break;
+        case 4:
+            resposta = `Você é cúmplice`;
+            break;
+        case 5:
+            resposta = `Você é o assasino`;
+            break;
+        default:
+            resposta = `Você é inocente`;
+    }
 
     //SAÍDA
+
+    alert(resposta)
 
 </script>

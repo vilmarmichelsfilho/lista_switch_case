@@ -8,10 +8,72 @@
 
     //ENTRADA
 
+    const hemisferio = prompt(`Informe qual hemisfério você está(N-norte ou S-sul):`);
+    const mes = prompt(`Informe o mês que você está(por escrito):`);
     
     //PROCESSAMENTO
 
+    let resposta;
+
+    switch (hemisferio.toUpperCase()) {
+        case "N":
+            switch(mes.toLowerCase()) {
+                case "dezembro":
+                case "janeiro":
+                case "fevereiro":
+                    resposta = "Você está no inverno";
+                    break;
+                case "março":
+                case "abril":
+                case "maio":
+                    resposta = "Você está na primavera";
+                    break;
+                case "junho":
+                case "julho":
+                case "agosto":
+                    resposta = "Você está no verão";
+                    break;
+                case "setembro":
+                case "outubro":
+                case "novembro":
+                    resposta = "Você está no outono";
+                    break;
+                default:
+                    resposta = "Você não inseriu um mês válido";
+            }
+            break;
+        case "S":
+            switch(mes.toLowerCase()) {
+                case "dezembro":
+                case "janeiro":
+                case "fevereiro":
+                    resposta = "Você está no verão";
+                    break;
+                case "março":
+                case "abril":
+                case "maio":
+                    resposta = "Você está no outono";
+                    break;
+                case "junho":
+                case "julho":
+                case "agosto":
+                    resposta = "Você está no inverno";
+                    break;
+                case "setembro":
+                case "outubro":
+                case "novembro":
+                    resposta = "Você está na primavera";
+                    break;
+                default:
+                    resposta = "Você não inseriu um mês válido";
+            }
+            break;
+        default:
+            resposta = "Você não inseriu um hemisfério válido";
+    }
 
     //SAÍDA
+
+    alert(resposta)
 
 </script>
